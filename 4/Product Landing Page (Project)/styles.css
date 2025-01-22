@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4c542;
+    color: #fff;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#header-img {
+    height: 50px;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 30px 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+    background-color: #fafafa;
+}
+
+#features {
+    background-color: #fff;
+}
+
+#contact {
+    background-color: #fafafa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+label, input {
+    margin-bottom: 15px;
+}
+
+#email {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#submit {
+    padding: 12px;
+    background-color: #f4c542;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #e3a03a;
+}
+
+@media only screen and (max-width: 720px) {
+    #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header-img {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header-img {
+        margin-bottom: 10px;
+    }
+}
+
+#video {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #f4c542;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
